@@ -40,7 +40,7 @@ def main():
                 sys.exit()
             for shot in shots:
                 if asteroid.is_colliding(shot):
-                    asteroid.kill()
+                    asteroid.split()
                     shot.kill()
                 if shot.current_life >= shot.max_life_span:
                     shot.kill()
